@@ -1,5 +1,82 @@
 body{
-    font-family: 'Play', sans-serif;
+    font-family: 'Play', Courier, Monospace;
     color: rgb(0, 220, 0);
-    background-color: black;
+    min-height: 100vh;
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+}
+
+h1{
+    text-align: center;
+    font-family: Courier, Monospace;
+    font-size: 4em;
+    line-height: 80%;
+}
+
+p{
+    padding: 18px;
+    font-size: 1.4em;
+}
+
+a{
+    color: rgb(0, 220, 0);
+}
+
+a:hover {
+    color: blue;
+}
+
+img {
+    min-width: 60px;
+    max-width: 60%;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-top: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    background-image: linear-gradient(black, rgb(0, 25, 0), rgb(0, 80, 0));
+}
+
+.links-container {
+    font-size: 1em;
+    line-height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.divider {
+    font-size: 2.5em;
+    line-height: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main-container {
+    border-width: 15px;
+    border-style: solid;
+    border-color: green;
+    height: 90vh;
+    background-image: linear-gradient(black, rgb(0, 25, 0), rgb(0, 80, 0));
+}
+
+@media screen and (min-width: 720px) {
+    .header-container {
+        flex-direction: row;
+        padding-left: 25px;
+        padding-right: 50px;
+    }
+
+    .links-container {
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
 }
