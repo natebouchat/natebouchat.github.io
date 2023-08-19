@@ -27,7 +27,11 @@ a:hover {
     color: blue;
 }
 
-img {
+#home-image {
+    text-align: center;
+}
+
+#logo {
     min-width: 60px;
     max-width: 60%;
 }
