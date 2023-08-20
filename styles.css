@@ -14,7 +14,6 @@ h1{
     font-size: 4em;
     line-height: 80%;
     margin-top: 0px;
-    padding-top: 30px;
 }
 
 p{
@@ -31,12 +30,19 @@ a:hover {
 }
 
 #home-image {
-    text-align: center;
+    width: 90%;
+    height: 320px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #logo {
     min-width: 60px;
     max-width: 60%;
+}
+
+.centered{
+    text-align: center;
 }
 
 .header-container{
@@ -67,6 +73,7 @@ a:hover {
 
 .main-container {
     min-height: 90vh;
+    padding-top: 60px;
     background-image: linear-gradient(rgb(0, 10, 0), rgb(0, 20, 0), rgb(0, 70, 0));
 }
 
@@ -84,5 +91,10 @@ a:hover {
     .divider {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .main-container {
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
