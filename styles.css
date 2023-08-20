@@ -11,14 +11,18 @@ body{
 h1{
     text-align: center;
     font-family: Courier, Monospace;
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 80%;
     margin-top: 0px;
 }
 
+h2 {
+    text-align: center;
+}
+
 p{
     padding: 18px;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 a{
@@ -70,14 +74,12 @@ a:hover {
 .main-container {
     min-height: 90vh;
     padding-top: 60px;
-    text-align: center;
     background-image: linear-gradient(rgb(0, 10, 0), rgb(0, 20, 0), rgb(0, 70, 0));
 }
 
 .column-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex-grow: 1;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -87,13 +89,21 @@ a:hover {
     border-top-style: dashed;
 }
 
-.temp {
-    width: 300px;
+.centered {
+    text-align: center;
+}
+
+.demo {
+    width: 70vw;
 }
 
 @media screen and (min-width: 720px) {
     h1 {
         font-size: 4em;
+    }
+
+    p{
+        font-size: 1.4em;
     }
     
     .header-container {
@@ -118,5 +128,9 @@ a:hover {
 
     .column-container{
         flex-direction: row;
+    }
+
+    .demo {
+        width: 35vw;
     }
 }
