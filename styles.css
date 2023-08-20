@@ -11,7 +11,7 @@ body{
 h1{
     text-align: center;
     font-family: Courier, Monospace;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 80%;
     margin-top: 0px;
 }
@@ -92,6 +92,10 @@ a:hover {
 }
 
 @media screen and (min-width: 720px) {
+    h1 {
+        font-size: 4em;
+    }
+    
     .header-container {
         flex-direction: row;
         padding-right: 50px;
