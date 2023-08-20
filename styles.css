@@ -93,6 +93,11 @@ a:hover {
     text-align: center;
 }
 
+.badge {
+    text-align: center;
+    background-color: #e4fff7;
+}
+
 .demo {
     width: 70vw;
 }
