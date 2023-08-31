@@ -96,6 +96,7 @@ a:hover {
 .badge {
     text-align: center;
     background-color: #e4fff7;
+    border-radius: 10px;
 }
 
 .demo {
