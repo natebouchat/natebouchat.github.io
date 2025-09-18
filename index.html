@@ -19,35 +19,55 @@
             </div>
             <div class="links-container">
                 <p class="divider">[</p>
-                <a href="index.html">About Me</a>
+                <a class="header-link" href="index.html">About Me</a>
                 <p class="divider">|</p>
-                <a href="certifications.html">Certifications</a>
+                <a class="header-link" href="certifications.html">Certifications</a>
                 <p class="divider">|</p>
-                <a href="projects.html">Projects</a>
+                <a class="header-link"href="projects.html">Projects</a>
                 <p class="divider">]</p>
             </div>
         </div>
         <div class="main-container">
             <div class="centered">
-                <h1>Hello World!</h1>
+                <h1>Hello World!<span id="blink">|</span></h1>
                 <p>
-                    My name is Nate Bouchat.
-                    I obtained my Bachelor's of Science in Cybersecurity in May of 2024, and along the way I have picked up a minor in both Computer Science and Art, 
-                    as well as earned multiple different Certifications.
+                    My name is Nathaniel (Nate) Bouchat
                 </p>
+                <p>
+                    I obtained my <span class="emphasize">Bachelor's of Science in Cybersecurity</span> in May of 2024, 
+                    and I am currently in <span class="emphasize">pursuit of my Master's in Cybersecurity</span>.
+                </p>
+                <p>
+                    Additionally, along the way I have picked up a <span class="emphasize">Minor in Computer Science and Art</span>, 
+                    as well as earned multiple different Certifications. A few have been listed below!
+                </p>
+                <div class="column-container">
+                    <a href="https://www.credly.com/earner/earned/badge/2da84708-a3fd-4015-a0c3-030a46c80579">
+                        <img class="badge-img" src="https://images.credly.com/size/340x340/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob">
+                    </a> 
+                    <a href="https://credentials.offsec.com/206cc3af-9b10-4bf6-af5b-d0e1fbd15d22#acc.R8fEtsvr">
+                        <img class="badge-img" src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/161099214">
+                    </a>
+                    <a href="https://www.credly.com/earner/earned/badge/0bea5402-3aaf-4939-9d60-7fed5e7d5e47">
+                        <img class="badge-img" src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png">
+                    </a>
+                </div>
                 <p>
                     My desire to make a difference in the world is what drives me to do Cybersecurity.
-                    The world is ever-evolving, and bad actors will always try to find a new way to do their nefarious deeds.
-                    The best part of Cybersecurity is that feeling when you stopped the bad guys from ever touching the assets that you kept safe.
-                </p>
-                <p> 
-                    Additionally, I've always loved making things, and making software is no different! In my free time I enjoy creating my own game projects.
-                    This includes making all of the code and assets and trying to make the experience as enjoyable as possible.
+                    The world is ever-evolving, and it is important to me to keep up with current technolgies
+                    and how best one can protect them. Additionally, I've always loved making things, and making software is no different!
                     Some examples of these projects can be found on my "Projects" tab or more directly on
-                    <a href="https://github.com/natebouchat">GitHub</a> .
+                    <a href="https://github.com/natebouchat">GitHub</a>.
                 </p>
-                <img src="img/DataSecurity.jpg" alt="Locked down cyber assets" id="home-image"/>
             </div>
         </div>
     </body>
 </html>
+
+<script>
+    var blink_speed = 800;
+    var t = setInterval(function () {
+        var ele = document.getElementById('blink');
+        ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+    }, blink_speed);
+</script>
